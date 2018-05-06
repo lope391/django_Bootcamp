@@ -1,0 +1,20 @@
+<h1>Word Count!</h1>
+
+<a href="{% url 'home' %}">Count Again</a>
+
+<h2>Your text is {{ count }} words long</h2>
+
+<h2>Your text was:</h2>
+<p>{{ text }}</p>
+
+<h2>Single Word Count </h2>
+
+    {% for word, total in dictionary %}
+    
+    <p><b>{{ word }}</b>:{{ total }}</p>
+    
+    {% endfor%}
+
+
+<br> 
+<a href="{% url 'about' %}">About</a>

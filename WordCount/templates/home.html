@@ -1,0 +1,12 @@
+<h1>Word Count Example</h1>
+
+<form action="{% url 'user' %}" >
+
+    <label>Enter The Text You Want To Count:</label>
+    <p><textarea cols="40" rows="5" name="full_Text"></textarea></p>
+    <input type="submit" value="Count!"/>
+
+</form>
+
+<br>
+<a href="{% url 'about' %}">About</a>
